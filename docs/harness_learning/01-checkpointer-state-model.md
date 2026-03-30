@@ -27,7 +27,7 @@ flowchart TD
     B -.短期状态可被抽取/注入.-> E
 
     F[DeerFlowClient / LangGraph Server] -->|创建 agent 时注入 saver| C
-    F -->|create_agent(..., state_schema=ThreadState)| B
+    F -->|create_agent with ThreadState| B
 ```
 
 ## 一句话先记住
