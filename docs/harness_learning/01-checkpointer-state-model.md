@@ -17,7 +17,7 @@ flowchart TD
     A[thread_id<br/>调用上下文里的线程键]
     B[ThreadState<br/>LangGraph 状态面]
     C[Checkpointer<br/>memory / sqlite / postgres]
-    D[Thread Filesystem<br/>threads/{thread_id}/user-data/<br/>workspace / uploads / outputs]
+    D[Thread Filesystem<br/>threads/thread_id/user-data/<br/>workspace / uploads / outputs]
     E[Memory<br/>memory.json / agent memory]
 
     A -->|configurable 中传入| C
